@@ -1,0 +1,371 @@
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    color: #333;
+}
+a { 
+    text-decoration: none; 
+    color: inherit; 
+}
+ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}　
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.site-header {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+}
+
+.header-top-bar {
+    background-color: #a6e0c1;
+    border-bottom: 1px solid #794040;
+    padding: 8px 0;
+    font-size: 13px;
+}
+.top-bar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.target-nav ul, .top-right-nav ul {
+    display: flex;
+    align-items: center;
+}
+.target-nav li a, .top-right-nav li a {
+    padding: 5px 12px;
+    color: #555;
+    transition: color 0.3s;
+}
+.target-nav li a:hover, .top-right-nav li a:hover {
+    color: #000;
+}
+.lang-btn a {
+    background-color: #00a0e9;
+    color: white;
+    padding: 8px 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+.lang-btn a:hover {
+    background-color: #007bb5;
+}
+.external-link::after {
+    content: '\f35d'; 
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.header-main {
+    padding: 20px 0;
+}
+.header-main-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-area > a {
+    display: flex;
+    align-items: center;
+}
+.logo-image { 
+    height: 45px; 
+    margin-right: 15px; 
+}
+.logo-text { 
+    display: flex; 
+    flex-direction: column; 
+}
+.university-name { 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    color: #555; 
+}
+.campus-name { 
+    font-size: 1.1em; 
+    color: #555; 
+}
+
+.header-main-right {
+    display: flex;
+    align-items: center;
+}
+.quick-links ul {
+    display: flex;
+    font-size: 14px;
+}
+.quick-links li a {
+    padding: 5px 12px;
+}
+.social-links {
+    display: flex;
+    margin-left: 15px;
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+}
+.social-links a {
+    margin: 0 5px;
+    font-size: 20px; 
+}
+.fa-facebook-f { color: #1877f2; }
+.fa-twitter { color: #1da1f2; }
+.fa-youtube { color: #ff0000; }
+.fa-instagram { color: #e4405f; }
+
+.global-nav {
+    background-color: #3b5062;
+    color: white;
+}
+.global-nav-inner {
+    display: flex;
+    white-space: nowrap;
+    justify-content: flex-start; 
+    align-items: center;
+ padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.main-menu ul {
+    display: flex;
+    list-style: none;
+    white-space: nowrap; 
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.main-menu li a {
+    display: block;
+    padding: 18px 25px;
+    font-weight: bold;
+    font-size: 15px;
+    border-right: 1px solid #5d6d7c;
+    transition: background-color 0.3s;
+}
+.main-menu li:first-child a {
+    border-left: 1px solid #5d6d7c;
+}
+.main-menu li a:hover {
+    background-color: #4a657c;
+}
+.search-area {
+    padding: 0 20px;
+}
+.search-area a {
+    font-weight: bold;
+}
+.search-area i {
+    margin-right: 8px;
+}
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 600px; 
+    overflow: hidden; 
+    background-color: #ccc; 
+}
+
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0; 
+    transition: opacity 2.0s ease-in-out; }
+
+.slide-image.is-active {
+    opacity: 1;
+}
+
+.news {
+    margin-top: 50px;  
+    margin-bottom: 50px; 
+}
+
+.news h3 {
+    font-size: 2.5em;        
+    text-align: center;   
+    margin-bottom: 30px;     
+    color: #3b5062;          
+    padding-bottom: 15px;   
+}
+
+
+.news ul {
+    list-style: none;
+    padding: 0;
+}
+
+.news li {
+    border-bottom: 1px dotted #ccc;
+}
+
+.news li a {
+    display: block; 
+    padding: 15px 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.news li a:hover {
+    background-color: #f4f4f4; 
+}
+
+
+.event {
+    margin-top: 50px;    
+    margin-bottom: 50px; 
+}
+
+.event h3 {
+    font-size: 2.5em;        
+    text-align: center;     
+    margin-bottom: 30px;    
+    color: #3b5062;         
+    border-bottom: 2px solid #a6e0c1; 
+    padding-bottom: 15px;    
+}
+.event ul {
+    list-style: none;
+    padding: 0;
+}
+
+.event li {
+    border-bottom: 1px dotted #ccc;
+}
+
+.event li a {
+    display: block; 
+    padding: 15px 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.event li a:hover {
+    background-color: #e8e8e8; 
+}
+
+
+.site-footer {
+    background-color: #93e2b8; 
+    padding: 40px 0;
+    border-top: 1px solid #eaeaea;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+
+.footer-info {
+    line-height: 1.7;
+}
+
+.footer-info .university-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer-info address {
+    font-style: normal; 
+    margin: 5px 0;
+}
+
+.footer-info .copyright {
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: #888;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social p {
+    margin: 0 15px 0 0;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.fa-facebook-f { background-color: #1877f2; }
+.fa-twitter { background-color: #1da1f2; }
+.fa-youtube { background-color: #ff0000; }
+.fa-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+
+
+#back-to-top {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    background-color: #555;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
